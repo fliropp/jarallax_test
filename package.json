@@ -1,0 +1,37 @@
+{
+  "name": "jarallax_test",
+  "version": "1.0.0",
+  "description": "testing jarallax for parallax",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "dev": "webpack --mode development  ./src/app.js --watch",
+    "build": "webpack --mode production ./src/app.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fliropp/jarallax_test.git"
+  },
+  "keywords": [
+    "jarallax",
+    "parallax"
+  ],
+  "author": "are grottum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fliropp/jarallax_test/issues"
+  },
+  "homepage": "https://github.com/fliropp/jarallax_test#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jarallax": "^1.10.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
