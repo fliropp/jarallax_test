@@ -85,7 +85,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar express = __webpack_require__(/*! express */ \"express\");\nvar app = express();\n\napp.get('/', function (req, res) {\n  res.send('Jarallax - Parallax');\n});\n\napp.listen(3000, function () {\n  console.log('run Jarallax, make Parallax!');\n});\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("/* WEBPACK VAR INJECTION */(function(__dirname) {\n\nvar express = __webpack_require__(/*! express */ \"express\");\nvar app = express();\nvar path = __webpack_require__(/*! path */ \"path\");\n\napp.get('/', function (req, res) {\n  res.sendFile(__dirname + '/index.html');\n});\n\napp.use(express.static('public'));\n\napp.listen(3000, function () {\n  console.log('run Jarallax, make Parallax!');\n});\n/* WEBPACK VAR INJECTION */}.call(this, \"/\"))\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
@@ -97,6 +97,17 @@ eval("\n\nvar express = __webpack_require__(/*! express */ \"express\");\nvar ap
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///external_%22express%22?");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"path\");\n\n//# sourceURL=webpack:///external_%22path%22?");
 
 /***/ })
 
