@@ -3,20 +3,20 @@
     z-index: 0;
     height:1000px;
 }
-.jarallax > .jarallax-img {
+.jarallax .jarallax-img {
     position: absolute;
     /*object-fit: cover; */
     /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: cover;';
+    font-family: 'object-fit: contain;';
     top: 0;
     /*left: 0;*/
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: -1;
 }
 
-.jarallax-img {
-  height: 10%;
+#jarallax-container-0 {
+  object-fit: contain;
 }
 
 .under, .over {

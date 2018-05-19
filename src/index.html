@@ -4,294 +4,41 @@
     <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/alfred.css">
     <script>
-    function init(){
-      jarallax(document.querySelectorAll('.jarallax'), {
-        speed: 0,
-        onScroll: function(calculations) {
-            console.log(calculations);
-          },
-      });
-    }
-    window.onload=init;
+      function init() {
+        jarallax(document.querySelectorAll('.jarallax'), {
+          speed: 0,
+          imgSize: 'contain',
+        });
+      }
+      function handleResize() {
+        var imgHeight = document.querySelector('.jarallax-img').height;
+        document.querySelector('.jarallax').height = imgHeight + 10;
+      }
+      window.onload=init;
+      window.addEventListener("resize", handleResize);
     </script>
+    <script async src="https://services.api.no/api/bazaar/assets/v2/bazaar.js"></script>
+
+    <bazaar-config>
+      <script type="application/bazaarscript">{"dfp.slotUrl":"/56257416/{publication}/{position}",
+        "lazyload.desktop.toppbanner":"0",
+        "isMobile":false,
+        "keywords":["forsiden"],
+        "positions":["midtbanner"],
+        "publication":"www.ba.no"}
+      </script>
+    </bazaar-config>
+
+
+
+
   </head>
   <body>
+    <div class="content">
+      <bazaar-ad position="midtbanner">
+      </bazaar-ad>
+    </div>
     <div class="over">
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
-      <p>
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-        What, me worry? What, me worry?, What, me worry?
-        What, me worry? What, me worry? What, me worry?
-        What, me worry? What, me worry?
-      </p>
       <p>
         What, me worry? What, me worry?, What, me worry?
         What, me worry? What, me worry? What, me worry?
@@ -330,6 +77,32 @@
       <img class="jarallax-img" src="/images/aen.jpg">
     </div>
     <div class="under">
+
+      <script type="application/javascript">
+        const ioJarallax = new IntersectionObserver(entries => {
+          if(entries[0].intersectionRatio <= 0) {
+            console.log('JARALLAX IS OUT OF VIEW');
+            //document.querySelector('.am-page-ad').style['display'] = 'none';
+          }else{
+            //document.querySelector('.am-page-ad').style['display'] = 'block';
+            console.log('JARALLAX IS IN VIEW');
+          }
+        });
+
+        const ioTpban = new IntersectionObserver(entries => {
+          if(entries[0].intersectionRatio <= 0) {
+            console.log('TOPBANNER IS OUT OF VIEW');
+            //document.querySelector('.am-page-ad').style['display'] = 'none';
+          }else{
+            //document.querySelector('.am-page-ad').style['display'] = 'block';
+            console.log('TOPBANNER IS IN VIEW');
+          }
+        });
+      ioTpban.observe(document.querySelector('.content'));
+      ioJarallax.observe(document.querySelector('.jarallax'));
+    </script>
+
+
       <p>
         What, me worry? What, me worry?, What, me worry?
         What, me worry? What, me worry? What, me worry?
