@@ -12,7 +12,7 @@
       }
       function handleResize() {
         var imgHeight = document.querySelector('.jarallax-img').height;
-        document.querySelector('.jarallax').height = imgHeight + 10;
+        document.querySelector('.jarallax').style['height'] = imgHeight + 'px';
       }
       window.onload=init;
       window.addEventListener("resize", handleResize);
@@ -25,19 +25,20 @@
         "isMobile":false,
         "keywords":["forsiden"],
         "positions":["midtbanner"],
-        "publication":"www.ba.no"}
+        "publication":"www.salsaposten.no"}
       </script>
     </bazaar-config>
 
-
-
+    <script>
+      window.addEventListener('message', (evt) => {
+        if( evt.data !== undefined && evt.data.url !== undefined) {
+          console.log('data: ' + evt.data.url);
+        }
+      });
+    </script>
 
   </head>
   <body>
-    <div class="content">
-      <bazaar-ad position="midtbanner">
-      </bazaar-ad>
-    </div>
     <div class="over">
       <p>
         What, me worry? What, me worry?, What, me worry?
@@ -73,12 +74,17 @@
         What, me worry? What, me worry?
       </p>
     </div>
-    <div class="jarallax">
-      <img class="jarallax-img" src="/images/aen.jpg">
-    </div>
-    <div class="under">
 
-      <script type="application/javascript">
+    <!--div class="jarallax">
+      <img class="jarallax-img" src="/images/aen.jpg">
+    </div-->
+    <div class="jarallax">
+      <bazaar-ad position="midtbanner" class="jarallax-img" id="midtbanner-1">
+      </bazaar-ad>
+    </div>
+
+    <div class="under">
+      <!--script type="application/javascript">
         const ioJarallax = new IntersectionObserver(entries => {
           if(entries[0].intersectionRatio <= 0) {
             console.log('JARALLAX IS OUT OF VIEW');
@@ -100,7 +106,7 @@
         });
       ioTpban.observe(document.querySelector('.content'));
       ioJarallax.observe(document.querySelector('.jarallax'));
-    </script>
+    </script-->
 
 
       <p>
